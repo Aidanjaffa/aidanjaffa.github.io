@@ -1,0 +1,296 @@
+.btn{
+    margin: 1px;
+    width: 32px;
+    height: 27.6px;
+}
+
+.btn:visited{
+    background-color: rgb(235, 242, 245) !important;
+}
+.btn:hover{
+    background-color: aliceblue;
+    border-color: rgb(169, 169, 169);
+}
+.btn.active{
+    background-color: rgb(235, 242, 245) !important;
+}
+
+canvas{
+    border: 1px solid black;
+    background-color: rgb(255, 255, 255);
+    background-image: url(alpha_back.png);
+    display: flex;
+    flex-direction:column;
+}
+
+#export{
+    visibility:hidden;
+}
+
+body{
+    margin: 0px;
+    background-color: rgb(182, 182, 182);
+}
+
+.icon-bar{
+    border-radius: 4px;
+    background-color: rgb(141, 141, 141);
+    width: fit-content;
+    height: fit-content;
+    padding: 4px;
+    resize: both;
+    position: relative;
+    top: 70px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-button {
+    width: 32px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.active{
+    background-color: rgb(122, 134, 145);
+}
+
+.pcr-app {
+    position: absolute;
+    transform: translateX(-200%); /* Center vertically */
+}
+
+.pickr {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.pcr-button {
+    width: 32px !important;
+}
+
+
+#file-settings{
+    order: 1;
+    display: flex;
+    justify-content: space-evenly;
+    flex-grow: 1;
+    padding: 4px;
+    border-radius: 4px;
+    background-color: aliceblue;
+    transition: 1s ease;
+}
+
+#extra{
+    height: 100px;
+    display: none;
+}
+
+#file-settings.expanded #extra{
+    display: block;
+}
+#text{
+    font-size: small;
+}
+
+.title{
+    height: 50px;
+    background-color: rgb(88, 88, 88);
+    padding: 10px;
+    text-align: center;
+}
+input{
+    background-color: rgb(88, 88, 88);
+    border: 0px;
+    width: 200px;
+    height: fit-content;
+    font-size: 20px;
+}
+
+input:focus{
+    outline: rgb(88, 88, 88);
+}
+
+
+/* INDEX PAGE STUFF*/
+body {
+    margin: 0;
+    background: radial-gradient(circle 900px at 50% 50%, rgb(60, 119, 99), rgb(33, 28, 106));
+    background-attachment: fixed; /* Ensures the gradient scrolls */
+    background-size: cover;
+}
+
+.gradient {
+    display: flex;
+    font-family: 'Courier New', Courier, monospace;
+    flex-wrap: wrap;
+}
+
+
+.text{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.content-body{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    margin-top: 90px; 
+    text-align: center; 
+    padding: 10px; 
+    color: white;
+    position: relative;
+}
+
+/* Media Query for Small Screens */
+
+
+h1{
+    text-decoration: underline;
+    text-align: start;
+    font-size: 40px;
+    font-weight: 400;
+    margin: 0;
+}
+
+h2{
+    font-weight: 200;
+    text-align: start;
+    font-size: 30px;
+}
+
+p{
+    line-height: 25px;
+    text-align: start;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.but{
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.but h3{
+    font-weight: 200;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.but:hover{
+    border-radius: 8px;
+    background-color: rgba(240, 248, 255, 0.2);
+    box-shadow: 0px -3px rgba(109, 150, 188, 0.4);
+    transition: 0.2s;
+    font-size: 22px;
+}
+
+
+/* Default hidden state */
+#about,
+#experience,
+#technologies,
+#projects {
+    display: none; /* Removes the element from the layout */
+    opacity: 0;    /* Ensure it's fully transparent */
+    position: absolute; /* Prevent affecting the layout */
+    transition: opacity 1s; /* Smooth transition for opacity */
+}
+
+/* Visible state */
+#about.visible,
+#experience.visible,
+#technologies.visible,
+#projects.visible {
+    display: block; /* Re-insert into the layout */
+    opacity: 1;     /* Fade in */
+    position: relative; /* Ensure proper layout positioning */
+    transition: opacity 1s; /* Smooth transition for opacity */
+}
+
+.card{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    position: relative;
+    right: 50px;
+    gap: 10px
+}
+
+.card:hover{
+    border-radius: 8px;
+    background-color: rgba(240, 248, 255, 0.2);
+    box-shadow: 0px -3px rgba(109, 150, 188, 0.4);
+    transition: 0.3s;
+}
+
+@media screen and (max-width: 768px) {
+    .text {
+        width: 100%; /* Stack items vertically */
+        height: 50%; /* Adjust height to take half of the viewport */
+    }
+    .header{
+        position: relative !important;
+    }
+    .card{
+        right: 0px;
+    }
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+a .but{
+    height: 28px;
+}
+
+.display-card{
+
+    height: 50vh;
+    padding: 10px;
+}
+
+.project-card{
+	width: 150px;
+	height: 150px;
+    border-radius: 10px;
+    transition: 0.7s;
+    margin: 10px;
+}
+
+.project-card:hover{
+    width: 160px;
+	height: 160px;
+    transition: 0.7s;
+    box-shadow: 5px 5px rgba(109, 150, 188, 0.4);
+}
+
+.grid{
+    display: flex;
+    position: absolute;
+    right: 10%;
+    flex-direction: column;
+    align-items: start;
+    padding: 10px;
+}
+
+.grid-row{
+    display: flex;
+}
