@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Me</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
   <body">
     <div class="gradient">
-      <div class="text" style="height: 100vh;">
+      <div class="text">
         <div class="content-body">
 
           <div class="header" style="position: fixed;" data-aos="fade-right">
@@ -43,7 +43,7 @@
       <div class="text">
           <div class="content-body" data-aos="zoom" data-aos-duration="1000" style="justify-content: start;">
             <!--ABOUT SECTION-->
-            <div class="header" id="about" >
+            <div class="header" id="about" style="left: 0;">
                 <p>I am a junior developer, passionate about programming and I enjoy crafting various projects utilizing different technologies.</p>
                 
                 <p>Currently, I am working in a front-end development role with the dSchool Foundation in Kenya 
@@ -91,29 +91,37 @@
               <p>tech</p>
             </div>
             <!--PROJECTS SECTION-->
-            <div class="header grid" id="projects" style="position: absolute; top: 0;">
-              <h2 style="text-align: center; font-size: 23px; text-decoration: underline;">Mouse over a project for an overview</h1>
-              <div class="grid-row">
-                <a href="https://dschoolfoundation.org/"><div class="project-card" id="card" style="background-image: url(dAF22.jpg); background-size: contain;"><h2 id="3" style="text-align: center; font-size: 16px; font-weight: 600; visibility: hidden;">s</h2></div></a>
+            <div class="grid-container" id="projects" >
+              <!--<h2 style="text-align: center; font-size: 23px; text-decoration: underline;">Mouse over a project for an overview</h1> -->
+              
+              <a href="https://fridge-magnet.itch.io/edge-brawlersexe" style="order: 4;">
+              <div class="project-card" style="background-image: url(/imgs/edgers.png);">
+                <h2 id="1" style="opacity: 0; transition: 0.5; text-align: center; text-decoration: underline;">Edge Brawlers</h2>
+              </div></a>
 
-                <a href="/editor.html"><div class="project-card" id="card" style="background-image: url(pixel.png); background-size: cover;"><h2 id="2" style="text-align: center; font-size: 17px; font-weight: 600; visibility: hidden; color: black;"></h2></div></a>
-                <a href="https://fridge-magnet.itch.io/edge-brawlers"><div class="project-card" id="card" style="background-image: url(edgers.png); background-size: cover;">
-                  <h2 id="1" style="text-align: center; font-size: 16px; font-weight: 600; visibility: hidden;"></h2>
-                </div></a>                
+              <a href="/editor.html" style="order: 3;">
+              <div class="project-card" style="background-image: url(/imgs/pixelart.png);">
+                <h2 id="2" style="opacity: 0; transition: 0.5; text-align: center; text-decoration: underline; color: rgb(0, 0, 0);">Pixel Art Editor</h2>
+              </div></a>
+              
+              <a href="https://dschoolfoundation.org/" style="order: 1;">
+              <div class="project-card" style="background-image: url(/imgs/daf2.png); background-position: -90px 0;">
+                <h2 id="3" style="opacity: 0; transition: 0.5; text-align: center; text-decoration: underline;">Dschool Foundation Website</h2>
+              </div></a>
+
+              <a href="https://followup-zp4v.onrender.com/" style="order: 2;">
+              <div class="project-card" style="background-image: url(/imgs/terminal.png);">
+                <h2 id="4" style="opacity: 0; transition: 0.5; text-align: center; text-decoration: underline;">Full-Stack Scheduling App</h2>
+              </div></a>
 
               </div>
-              <div class="display-card">
-                <h1></h1>
-                <p id="1">Here are just a select few of the projects I have worked on over the last few years</p>
-                <p id="2"></p>
-            </div>
             
             </div>
           </div>
 
       </div>
     </div>
-    <script src="homepage.js"></script>
+    <script src="scripts/homepage.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();

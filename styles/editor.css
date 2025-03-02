@@ -1,0 +1,120 @@
+.btn{
+    margin: 1px;
+    width: 32px;
+    height: 27.6px;
+}
+
+.btn:visited{
+    background-color: rgb(235, 242, 245) !important;
+}
+.btn:hover{
+    background-color: aliceblue;
+    border-color: rgb(169, 169, 169);
+}
+.btn.active{
+    background-color: rgb(235, 242, 245) !important;
+}
+
+canvas{
+    border: 1px solid black;
+    background-color: rgb(255, 255, 255);
+    background-image: url(/imgs/alpha_back.png);
+    display: flex;
+    flex-direction:column;
+}
+
+#export{
+    visibility:hidden;
+}
+
+body{
+    margin: 0px;
+    color: white;
+    background-color: rgb(182, 182, 182);
+}
+
+.icon-bar{
+    border-radius: 4px;
+    background-color: rgb(141, 141, 141);
+    width: fit-content;
+    height: fit-content;
+    padding: 4px;
+    resize: both;
+    position: relative;
+    top: 70px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-button {
+    width: 32px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.active{
+    background-color: rgb(122, 134, 145);
+}
+
+.pcr-app {
+    position: absolute;
+    transform: translateX(-200%); /* Center vertically */
+}
+
+.pickr {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.pcr-button {
+    width: 32px !important;
+}
+
+
+#file-settings{
+    order: 1;
+    display: flex;
+    justify-content: space-evenly;
+    flex-grow: 1;
+    padding: 4px;
+    border-radius: 4px;
+    background-color: aliceblue;
+    transition: 1s ease;
+}
+
+#extra{
+    height: 100px;
+    display: none;
+}
+
+#file-settings.expanded #extra{
+    display: block;
+}
+#text{
+    font-size: small;
+}
+
+.title{
+    height: 50px;
+    background-color: rgb(88, 88, 88);
+    padding: 10px;
+    text-align: center;
+}
+input{
+    background-color: rgb(88, 88, 88);
+    border: 0px;
+    width: 200px;
+    height: fit-content;
+    font-size: 20px;
+}
+
+input:focus{
+    outline: rgb(88, 88, 88);
+}
